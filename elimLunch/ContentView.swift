@@ -49,7 +49,8 @@ struct ContentView: View {//뷰.
         Button("2"){
             myClass.doNo()
         }
-            
+        Text(String(appwidget))
+
         
         AsyncImage(url: myClass.url) // 1
 //        myClass.img
@@ -60,6 +61,7 @@ struct ContentView: View {//뷰.
             .padding()
         
             .onOpenURL(perform: { (url) in
+                appwidget=url.scheme!
                 if(url.path.elementsEqual("/Yes"))
                 {
                     cnt+=1

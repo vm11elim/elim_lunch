@@ -19,6 +19,12 @@
 		4F83286C2911FA6A0069F936 /* FoodScatchWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4F8328672911FA690069F936 /* FoodScatchWidget.intentdefinition */; };
 		4F83286F2911FA6A0069F936 /* FoodScatchWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4F83285E2911FA690069F936 /* FoodScatchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4F832875291229F60069F936 /* MY_HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F832874291229F60069F936 /* MY_HTTP.swift */; };
+		4FA5150F2913B97400CACF17 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8328602911FA690069F936 /* WidgetKit.framework */; };
+		4FA515102913B97400CACF17 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8328622911FA690069F936 /* SwiftUI.framework */; };
+		4FA515132913B97400CACF17 /* Yu_WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA515122913B97400CACF17 /* Yu_WidgetsBundle.swift */; };
+		4FA515152913B97400CACF17 /* Yu_Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA515142913B97400CACF17 /* Yu_Widgets.swift */; };
+		4FA515172913B97500CACF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA515162913B97500CACF17 /* Assets.xcassets */; };
+		4FA5151B2913B97500CACF17 /* Yu WidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4FA5150E2913B97400CACF17 /* Yu WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +34,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4F83285D2911FA690069F936;
 			remoteInfo = FoodScatchWidgetExtension;
+		};
+		4FA515192913B97500CACF17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8328412911F9F50069F936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FA5150D2913B97400CACF17;
+			remoteInfo = "Yu WidgetsExtension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,6 +52,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				4F83286F2911FA6A0069F936 /* FoodScatchWidgetExtension.appex in Embed App Extensions */,
+				4FA5151B2913B97500CACF17 /* Yu WidgetsExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +73,11 @@
 		4F8328682911FA6A0069F936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F83286A2911FA6A0069F936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F832874291229F60069F936 /* MY_HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MY_HTTP.swift; sourceTree = "<group>"; };
+		4FA5150E2913B97400CACF17 /* Yu WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Yu WidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA515122913B97400CACF17 /* Yu_WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yu_WidgetsBundle.swift; sourceTree = "<group>"; };
+		4FA515142913B97400CACF17 /* Yu_Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yu_Widgets.swift; sourceTree = "<group>"; };
+		4FA515162913B97500CACF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FA515182913B97500CACF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +97,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FA5150B2913B97400CACF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA515102913B97400CACF17 /* SwiftUI.framework in Frameworks */,
+				4FA5150F2913B97400CACF17 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +114,7 @@
 			children = (
 				4F83284B2911F9F50069F936 /* elimLunch */,
 				4F8328642911FA690069F936 /* FoodScatchWidget */,
+				4FA515112913B97400CACF17 /* Yu Widgets */,
 				4F83285F2911FA690069F936 /* Frameworks */,
 				4F83284A2911F9F50069F936 /* Products */,
 			);
@@ -96,6 +125,7 @@
 			children = (
 				4F8328492911F9F50069F936 /* elimLunch.app */,
 				4F83285E2911FA690069F936 /* FoodScatchWidgetExtension.appex */,
+				4FA5150E2913B97400CACF17 /* Yu WidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +170,17 @@
 			path = FoodScatchWidget;
 			sourceTree = "<group>";
 		};
+		4FA515112913B97400CACF17 /* Yu Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				4FA515122913B97400CACF17 /* Yu_WidgetsBundle.swift */,
+				4FA515142913B97400CACF17 /* Yu_Widgets.swift */,
+				4FA515162913B97500CACF17 /* Assets.xcassets */,
+				4FA515182913B97500CACF17 /* Info.plist */,
+			);
+			path = "Yu Widgets";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +197,7 @@
 			);
 			dependencies = (
 				4F83286E2911FA6A0069F936 /* PBXTargetDependency */,
+				4FA5151A2913B97500CACF17 /* PBXTargetDependency */,
 			);
 			name = elimLunch;
 			productName = elimLunch;
@@ -179,6 +221,23 @@
 			productReference = 4F83285E2911FA690069F936 /* FoodScatchWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		4FA5150D2913B97400CACF17 /* Yu WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA5151C2913B97500CACF17 /* Build configuration list for PBXNativeTarget "Yu WidgetsExtension" */;
+			buildPhases = (
+				4FA5150A2913B97400CACF17 /* Sources */,
+				4FA5150B2913B97400CACF17 /* Frameworks */,
+				4FA5150C2913B97400CACF17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yu WidgetsExtension";
+			productName = "Yu WidgetsExtension";
+			productReference = 4FA5150E2913B97400CACF17 /* Yu WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,7 +245,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					4F8328482911F9F50069F936 = {
@@ -194,6 +253,9 @@
 					};
 					4F83285D2911FA690069F936 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					4FA5150D2913B97400CACF17 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -212,6 +274,7 @@
 			targets = (
 				4F8328482911F9F50069F936 /* elimLunch */,
 				4F83285D2911FA690069F936 /* FoodScatchWidgetExtension */,
+				4FA5150D2913B97400CACF17 /* Yu WidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F8328692911FA6A0069F936 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA5150C2913B97400CACF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA515172913B97500CACF17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +328,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FA5150A2913B97400CACF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA515132913B97400CACF17 /* Yu_WidgetsBundle.swift in Sources */,
+				4FA515152913B97400CACF17 /* Yu_Widgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -264,6 +344,11 @@
 			isa = PBXTargetDependency;
 			target = 4F83285D2911FA690069F936 /* FoodScatchWidgetExtension */;
 			targetProxy = 4F83286D2911FA6A0069F936 /* PBXContainerItemProxy */;
+		};
+		4FA5151A2913B97500CACF17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FA5150D2913B97400CACF17 /* Yu WidgetsExtension */;
+			targetProxy = 4FA515192913B97500CACF17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,13 +484,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vm11.elim.nowapp.elimLunch;
+				PRODUCT_BUNDLE_IDENTIFIER = vm11.elim.nowapp.elimLunch2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -430,13 +515,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vm11.elim.nowapp.elimLunch;
+				PRODUCT_BUNDLE_IDENTIFIER = vm11.elim.nowapp.elimLunch2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -456,14 +541,14 @@
 				INFOPLIST_FILE = FoodScatchWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FoodScatchWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vm11.elim.nowapp.elimLunch.FoodScatchWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = vm11.elim.nowapp.elimLunch2.FoodScatchWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -484,14 +569,72 @@
 				INFOPLIST_FILE = FoodScatchWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FoodScatchWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vm11.elim.nowapp.elimLunch.FoodScatchWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = vm11.elim.nowapp.elimLunch2.FoodScatchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FA5151D2913B97500CACF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R98ZVC8RBD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yu Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Yu Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vm11.elim.nowapp.elimLunch2.Yu-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FA5151E2913B97500CACF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R98ZVC8RBD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yu Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Yu Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vm11.elim.nowapp.elimLunch2.Yu-Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -526,6 +669,15 @@
 			buildConfigurations = (
 				4F8328712911FA6A0069F936 /* Debug */,
 				4F8328722911FA6A0069F936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA5151C2913B97500CACF17 /* Build configuration list for PBXNativeTarget "Yu WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA5151D2913B97500CACF17 /* Debug */,
+				4FA5151E2913B97500CACF17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

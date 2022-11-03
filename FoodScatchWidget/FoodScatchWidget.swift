@@ -92,6 +92,11 @@ struct SimpleEntry: TimelineEntry {
 
 struct FoodScatchWidgetEntryView : View {
     
+    private static let deeplinkURL1 = URL(string: "AA://")!
+    private static let deeplinkURL2 = URL(string: "BB://")!
+
+    
+    //
     let largeConfig = UIImage.SymbolConfiguration(pointSize: 140, weight: .bold, scale: .large)
     @State var mytxt : String = "String"
     
@@ -100,20 +105,35 @@ struct FoodScatchWidgetEntryView : View {
     var body: some View {
 
         HStack{
-            Spacer()
-            Link(destination: URL(string: "MyMy:///Yes")!, label: {
-                VStack{
+
+            VStack{
                 Image(systemName: "hand.thumbsup.fill").imageScale(.large)
-                Text("좋아요")
-                }.padding(30).background(Color.blue)
-            })
+                Text("Red")
+            }
+                .padding(30).background(Color.red)
+                .widgetURL(Self.deeplinkURL1)
             Spacer()
-            Link(destination: URL(string: "MyMy:///No")!, label: {
-                VStack{
+            
+            VStack{
                 Image(systemName: "hand.thumbsdown.fill").imageScale(.large)
-                Text("지쳐요")
-                }.padding(30).background(Color.red)
-            })
+                Text("Blue")
+            }
+                .padding(30).background(Color.blue)
+                .widgetURL(Self.deeplinkURL2)
+            
+//            Link(destination: URL(string: "MyMy:///Yes")!, label: {
+//                VStack{
+//                Image(systemName: "hand.thumbsup.fill").imageScale(.large)
+//                Text("좋아요")
+//                }.padding(30).background(Color.blue)
+//            })
+//            Spacer()
+//            Link(destination: URL(string: "MyMy:///No")!, label: {
+//                VStack{
+//                Image(systemName: "hand.thumbsdown.fill").imageScale(.large)
+//                Text("지쳐요")
+//                }.padding(30).background(Color.red)
+//            })
             Spacer()
         }
         .padding()
@@ -137,6 +157,7 @@ struct FoodScatchWidget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.accessoryCircular,.accessoryInline,.accessoryRectangular])
     }
 }
 
